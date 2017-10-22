@@ -24,7 +24,7 @@ namespace MVCReviewSite
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/Bootswatch-Yeti.css",
                       "~/Content/site.css"));
         }
     }

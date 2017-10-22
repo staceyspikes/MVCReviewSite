@@ -9,5 +9,8 @@ namespace MVCReviewSite.Models
     public class Category
     {
         [Key]
+        public int ID { get; set; }
+
+        public virtual ICollection<Review_Category> Reviews_Categories { get; set; }
     }
 }
