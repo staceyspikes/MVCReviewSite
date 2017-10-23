@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table" >
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Title)
@@ -28,19 +28,19 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td style ="border :1px;">
             @Html.DisplayFor(modelItem => item.Title)
         </td>
-        <td>
+        <td style ="border :1px;">
             @Html.DisplayFor(modelItem => item.Content)
         </td>
-        <td>
+        <td style ="border :1px;">
             @Html.DisplayFor(modelItem => item.PublishDate)
         </td>
-        <td>
+        <td style ="border :1px;">
             @Html.DisplayFor(modelItem => item.WouldRate)
         </td>
-        <td>
+        <td style ="border :1px;">
             @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
